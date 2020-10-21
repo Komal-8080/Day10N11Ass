@@ -39,5 +39,9 @@ declare -A computeArray=()
         echo "$key => ${computeArray[$key]}"
 	done
 
+	arrVar=(${computeArray[@]})
 
+	echo " "
+	echo "Values in Array are : "
+	echo "${arrVar[@]}"
 
