@@ -18,3 +18,6 @@ read c
 	Computation3=$((c+a/b))
 	echo "Value of c+a/b is $Computation3"
 
+	Computation4=$((a%b+c))
+	echo "Value of a%b+c is $Computation4"
+
