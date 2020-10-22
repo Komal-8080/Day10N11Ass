@@ -49,3 +49,8 @@ declare -A computeArray=()
 	echo " "
 	echo "Values in Asencending Order"
 	echo "$sortedAscending"
+
+	sortedDescending=`echo ${arrVar[*]}|tr " " "\n"|sort -nr`
+	echo " "
+	echo "Values in Descending Order"
+	echo "$sortedDescending"
