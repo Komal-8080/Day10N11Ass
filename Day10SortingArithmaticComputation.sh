@@ -36,7 +36,7 @@ declare -A computeArray=()
 	echo "Values in Dictionary are : "
 	for key in "${!computeArray[@]}"
 	do
-        echo "$key => ${computeArray[$key]}"
+        echo "$key => ${computeArray[$key]} "
 	done
 
 	arrVar=(${computeArray[@]})
@@ -45,3 +45,7 @@ declare -A computeArray=()
 	echo "Values in Array are : "
 	echo "${arrVar[@]}"
 
+	sortedAscending=`echo ${arrVar[*]}|tr " " "\n"|sort -n`
+	echo " "
+	echo "Values in Asencending Order"
+	echo "$sortedAscending"
